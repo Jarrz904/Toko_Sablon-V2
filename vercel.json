@@ -1,7 +1,9 @@
 {
-    "version": 2,
-    "framework": "laravel",
-    "routes": [
+  "version": 2,
+  "functions": {
+    "api/index.php": { "runtime": "vercel-php@0.7.2" }
+  },
+  "routes": [
         {
             "src": "/img/(.*)",
             "dest": "/public/img/$1"
