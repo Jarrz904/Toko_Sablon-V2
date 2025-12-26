@@ -15,11 +15,4 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
-    })
-    ->create()
-    /*
-    |--------------------------------------------------------------------------
-    | Tambahan Konfigurasi untuk Vercel (Serverless)
-    |--------------------------------------------------------------------------
-    */
-    ->useStoragePath(env('APP_ENV') === 'production' ? '/tmp/storage' : null);
+    })->create();

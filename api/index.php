@@ -1,17 +1,17 @@
 <?php
 
-// 1. Arahkan semua folder writable ke /tmp karena Vercel read-only
+// 1. Definisikan path temporary untuk Vercel
 $storagePath = '/tmp/storage';
-if (!is_dir($storagePath)) {
-    mkdir($storagePath . '/framework/views', 0755, true);
-    mkdir($storagePath . '/framework/cache', 0755, true);
-    mkdir($storagePath . '/framework/sessions', 0755, true);
-    mkdir($storagePath . '/bootstrap/cache', 0755, true);
+$viewPath = '/tmp/storage/framework/views';
+
+// 2. Buat foldernya secara otomatis jika belum ada
+if (!is_dir($viewPath)) {
+    mkdir($viewPath, 0755, true);
 }
 
-// 2. Override environment variables untuk path storage
-putenv("VIEW_COMPILED_PATH=/tmp/storage/framework/views");
-putenv("APP_STORAGE=/tmp/storage");
+// 3. Set environment variable secara runtime agar Laravel tahu path-nya berubah
+putenv("VIEW_COMPILED_PATH=$viewPath");
+putenv("APP_STORAGE=$storagePath");
 
-// 3. Jalankan aplikasi melalui public/index.php asli
+// 4. Load index asli dari folder public
 require __DIR__ . '/../public/index.php';
