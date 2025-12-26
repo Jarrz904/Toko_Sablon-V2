@@ -93,7 +93,7 @@
 
     <nav class="flex justify-between items-center p-6 sticky top-0 bg-[#0f0f0f]/80 backdrop-blur-lg z-50 border-b border-white/5">
         <div class="flex items-center gap-4">
-            <img src="img/logo.jpg" alt="Journa Studio Logo" class="h-10 md:h-12 rounded-sm object-contain">
+            <img src="/img/logo.jpg" alt="Journa Studio Logo" class="h-10 md:h-12 rounded-sm object-contain">
             <div class="hidden md:block text-sm font-bold tracking-[0.3em] uppercase">Journa Studio</div>
         </div>
         <div class="hidden lg:flex space-x-10 text-[10px] uppercase tracking-widest font-medium opacity-60">
@@ -122,7 +122,7 @@
             <div class="relative overflow-hidden rounded-[3rem] aspect-square bg-[#705515] border border-white/10 shadow-2xl transition-all duration-700 ease-out transform-gpu group-hover:rotate-y-12 group-hover:-rotate-x-6 group-hover:scale-105" 
                  style="transform-style: preserve-3d;">
                 
-                <img src="img/logo2.png" 
+                <img src="/img/logo2.png" 
                      class="w-full h-full object-cover transition duration-1000 group-hover:scale-110" 
                      style="transform: translateZ(30px);" 
                      alt="Journa Studio Logo">
@@ -167,7 +167,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div class="group cursor-pointer" @click="selectProduct('Plastisol Raster', 65000)">
                 <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="img/foto4.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <img src="/img/foto4.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-xs font-bold tracking-widest uppercase border border-white p-3">Pilih & Pesan</span>
                     </div>
@@ -179,7 +179,7 @@
 
             <div class="group cursor-pointer" @click="selectProduct('Plastisol Glossy', 68000)">
                 <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="img/foto5.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <img src="/img/foto5.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-xs font-bold tracking-widest uppercase border border-white p-3">Pilih & Pesan</span>
                     </div>
@@ -191,7 +191,7 @@
 
             <div class="group cursor-pointer" @click="selectProduct('Sablon Plascharge Ink', 75000)">
                 <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="img/foto6.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <img src="/img/foto6.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-xs font-bold tracking-widest uppercase border border-white p-3">Pilih & Pesan</span>
                     </div>
@@ -203,7 +203,7 @@
 
             <div class="group cursor-pointer" @click="selectProduct('Sablon Puff Ink Print', 72000)">
                 <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="img/foto7.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <img src="/img/foto7.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-xs font-bold tracking-widest uppercase border border-white p-3">Pilih & Pesan</span>
                     </div>
@@ -215,7 +215,7 @@
 
             <div class="group cursor-pointer" @click="selectProduct('Cotton Combed 24s', 58000)">
                 <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="img/foto8.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <img src="/img/foto8.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-xs font-bold tracking-widest uppercase border border-white p-3">Pilih & Pesan</span>
                     </div>
@@ -227,7 +227,7 @@
 
             <div class="group cursor-pointer" @click="selectProduct('Cotton Combed 30s', 55000)">
                 <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="img/foto9.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <img src="/img/foto9.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-xs font-bold tracking-widest uppercase border border-white p-3">Pilih & Pesan</span>
                     </div>
@@ -242,7 +242,7 @@
     <section id="preview" class="py-32 bg-[#0a0a0a] border-y border-white/5">
         <div class="max-w-6xl mx-auto px-10 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
             <div id="preview-area" class="relative flex justify-center items-center bg-neutral-900 rounded-[3rem] p-10 aspect-square overflow-hidden border border-white/10 shadow-2xl">
-                <img src="img/kaos-polos-putih.jpg"
+                <img src="/img/kaos-polos-putih.jpg"
                      class="w-full h-full object-contain z-10 opacity-80" alt="Kaos Polos">
                 
                 <template x-if="imageUrl">
