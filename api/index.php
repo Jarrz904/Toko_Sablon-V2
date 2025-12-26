@@ -1,17 +1,29 @@
 <?php
 
-// 1. Definisikan path temporary untuk Vercel
-$storagePath = '/tmp/storage';
-$viewPath = '/tmp/storage/framework/views';
+// 1. Setup folder temporary
+$tempDir = '/tmp/storage';
+$paths = [
+    "$tempDir/framework/views",
+    "$tempDir/framework/cache",
+    "$tempDir/framework/sessions",
+    "$tempDir/bootstrap/cache",
+];
 
-// 2. Buat foldernya secara otomatis jika belum ada
-if (!is_dir($viewPath)) {
-    mkdir($viewPath, 0755, true);
+foreach ($paths as $path) {
+    if (!is_dir($path)) {
+        mkdir($path, 0755, true);
+    }
 }
 
-// 3. Set environment variable secara runtime agar Laravel tahu path-nya berubah
-putenv("VIEW_COMPILED_PATH=$viewPath");
-putenv("APP_STORAGE=$storagePath");
+// 2. Lingkungan Produksi
+putenv("APP_ENV=production");
+putenv("APP_STORAGE=$tempDir");
+putenv("VIEW_COMPILED_PATH=$tempDir/framework/views");
 
-// 4. Load index asli dari folder public
+// 3. PENTING: Salin file services.php dan packages.php jika ada (atau biarkan kosong agar Laravel rebuild)
+// Ini sering jadi penyebab 'Target class [view] does not exist'
+if (!file_exists("$tempDir/bootstrap/cache/services.php")) {
+    file_put_contents("$tempDir/bootstrap/cache/services.php", '<?php return []; ?>');
+}
+
 require __DIR__ . '/../public/index.php';
