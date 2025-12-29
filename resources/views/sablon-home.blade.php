@@ -15,13 +15,12 @@
         .translate-z-30 { transform: translateZ(30px); }
         .translate-z-50 { transform: translateZ(50px); }
         
-        /* Background Hero Teroptimasi - Diubah agar ikut bergerak saat scroll */
+        /* Background Hero Teroptimasi */
         .hero-bg {
             background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 1)), url('{{ asset("img/logo.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            /* background-attachment: fixed; dihapus agar ikut bergerak saat scroll */
         }
 
         /* Custom Scrollbar */
@@ -39,11 +38,12 @@
         }
       }">
 
-    <nav class="flex justify-between items-center p-6 sticky top-0 bg-[#0f0f0f]/80 backdrop-blur-lg z-50 border-b border-white/5">
-        <div class="flex items-center gap-4">
-            <img src="{{ asset('img/logo.jpg') }}" alt="Journa Sablon Logo" class="h-10 md:h-12 rounded-sm object-contain">
-            <div class="hidden md:block text-sm font-bold tracking-[0.3em] uppercase">Journa Sablon</div>
+    <nav class="flex justify-between items-center p-4 md:p-6 sticky top-0 bg-[#0f0f0f]/80 backdrop-blur-lg z-50 border-b border-white/5">
+        <div class="flex items-center gap-3 md:gap-4">
+            <img src="{{ asset('img/logo.jpg') }}" alt="Journa Sablon Logo" class="h-8 md:h-12 rounded-sm object-contain">
+            <div class="text-[10px] md:text-sm font-bold tracking-[0.2em] md:tracking-[0.3em] uppercase">Journa Sablon</div>
         </div>
+        
         <div class="hidden lg:flex space-x-10 text-[10px] uppercase tracking-widest font-medium opacity-60">
             <a href="#about" class="hover:opacity-100 hover:text-amber-500 transition">Tentang Kami</a>
             <a href="#sablon" class="hover:opacity-100 hover:text-amber-500 transition">Jenis Sablon</a>
@@ -51,9 +51,10 @@
             <a href="#testimoni" class="hover:opacity-100 hover:text-amber-500 transition">Testimoni</a>
             <a href="#kontak" class="hover:opacity-100 hover:text-amber-500 transition">Kontak</a>
         </div>
-        <a href="https://wa.me/6289686202603" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition-all shadow-lg shadow-green-500/20">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412 0 6.556-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.92c1.589.943 3.139 1.462 4.75 1.463 5.462 0 9.906-4.444 9.906-9.906 0-2.646-1.03-5.132-2.903-7.003-1.871-1.871-4.358-2.903-7.003-2.903-5.462 0-9.906 4.444-9.906 9.906 0-2.031.618 4.001 1.787 5.713l-1.011 3.703 3.869-.884-.493-.39z"/></svg>
-            Hubungi Kami
+
+        <a href="https://wa.me/6289686202603" target="_blank" class="flex items-center gap-2 md:gap-3 bg-[#25D366] text-white px-4 py-2 md:px-8 md:py-4 rounded-full font-black text-[9px] md:text-sm uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-lg hover:shadow-[#25D366]/50">
+            <svg class="w-3 h-3 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412 0 6.556-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.92c1.589.943 3.139 1.462 4.75 1.463 5.462 0 9.906-4.444 9.906-9.906 0-2.646-1.03-5.132-2.903-7.003-1.871-1.871-4.358-2.903-7.003-2.903-5.462 0-9.906 4.444-9.906 9.906 0-2.031.618 4.001 1.787 5.713l-1.011 3.703 3.869-.884-.493-.39z"/></svg>
+            <span class="whitespace-nowrap">Hubungi Kami</span>
         </a>
     </nav>
 
@@ -72,7 +73,7 @@
         </div>
     </header>
 
-   <section id="about" class="max-w-7xl mx-auto px-8 py-32 grid grid-cols-1 md:grid-cols-2 gap-20 items-center border-b border-white/5">
+    <section id="about" class="max-w-7xl mx-auto px-8 py-32 grid grid-cols-1 md:grid-cols-2 gap-20 items-center border-b border-white/5">
         <div class="relative group" style="perspective: 1500px;"> 
             <div class="absolute -inset-4 bg-amber-500/20 rounded-full blur-3xl group-hover:bg-amber-500/40 transition duration-1000"></div>
             <div class="relative overflow-hidden rounded-[3rem] aspect-square bg-[#705515] border border-white/10 shadow-2xl transition-all duration-700 ease-out transform-gpu group-hover:rotate-y-12 group-hover:-rotate-x-6 group-hover:scale-105" 
@@ -97,48 +98,46 @@
         </div>
     </section>
 
-    <section id="sablon" class="max-w-7xl mx-auto px-8 py-32 text-center">
-        <h2 class="text-5xl font-bold mt-4 mb-16 tracking-tighter uppercase italic text-white">Jenis Sablon</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <section id="sablon" class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-32 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-12 md:mb-16 tracking-tighter uppercase italic text-white">Jenis Sablon</h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             <div class="group cursor-pointer" @click="selectProduct('Plastisol Raster', 65000)">
-                <div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
+                <div class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
                     <img src="{{ asset('img/foto4.jpg') }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter">Plastisol Raster</h3>
-                <p class="text-neutral-500 text-[10px] uppercase tracking-widest mt-2">Detail dot halus / Realis</p>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plastisol Raster</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Detail dot halus</p>
             </div>
             <div class="group cursor-pointer" @click="selectProduct('Plastisol Glossy', 68000)">
-                <div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
+                <div class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
                     <img src="{{ asset('img/foto5.jpg') }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter">Plastisol Glossy</h3>
-                <p class="text-neutral-500 text-[10px] uppercase tracking-widest mt-2">Efek mengkilap & mewah</p>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plastisol Glossy</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Efek mewah</p>
             </div>
             <div class="group cursor-pointer" @click="selectProduct('Plascharge Ink', 75000)">
-                <div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
+                <div class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
                     <img src="{{ asset('img/foto6.jpg') }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter">Plascharge Ink</h3>
-                <p class="text-neutral-500 text-[10px] uppercase tracking-widest mt-2">Lembut menyatu ke kain</p>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plascharge Ink</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Menyatu ke kain</p>
             </div>
             <div class="group cursor-pointer" @click="selectProduct('Puff Ink 3D', 72000)">
-                <div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-neutral-900 border border-white/5 relative">
+                <div class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
                     <img src="{{ asset('img/foto7.jpg') }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter">Puff Ink 3D</h3>
-                <p class="text-neutral-500 text-[10px] uppercase tracking-widest mt-2">Efek timbul artistik</p>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Puff Ink 3D</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Efek timbul</p>
             </div>
         </div>
     </section>
-
     <section id="bahan" class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-8 text-center">
              <h2 class="text-5xl font-bold mt-4 mb-16 tracking-tighter uppercase italic text-white">Jenis Bahan</h2>
-            
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 24s White')">
                     <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
@@ -188,7 +187,7 @@
         </div>
     </section>
 
-   <section id="testimoni" class="max-w-7xl mx-auto px-8 py-32">
+    <section id="testimoni" class="max-w-7xl mx-auto px-8 py-32">
         <div class="text-center mb-20">
             <h2 class="text-5xl font-bold mt-4 tracking-tighter uppercase italic text-white">Testimoni</h2>
         </div>
@@ -199,9 +198,7 @@
                     <p class="text-neutral-300 italic leading-relaxed">"Kualitas sablon plastisolnya gila banget, detailnya dapet dan awet walau udah dicuci berkali-kali. Journa emang juara!"</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">
-                        A
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">A</div>
                     <div>
                         <h4 class="text-white font-bold text-xs uppercase tracking-widest">Andika Pratama</h4>
                         <p class="text-neutral-500 text-[10px] uppercase tracking-tighter">Owner Local Brand</p>
@@ -215,9 +212,7 @@
                     <p class="text-neutral-300 italic leading-relaxed">"Gak nyangka di Semarang ada studio sablon yang se-detail ini. Pas buat merch band saya yang banyak desain raster halus."</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">
-                        R
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">R</div>
                     <div>
                         <h4 class="text-white font-bold text-xs uppercase tracking-widest">Reza Bagus</h4>
                         <p class="text-neutral-500 text-[10px] uppercase tracking-tighter">Vocalist Darkroom</p>
@@ -231,9 +226,7 @@
                     <p class="text-neutral-300 italic leading-relaxed">"Bahan cotton combed premiumnya beneran kerasa bedanya. Dingin di kulit dan sablonannya nggak gampang pecah."</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">
-                        S
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">S</div>
                     <div>
                         <h4 class="text-white font-bold text-xs uppercase tracking-widest">Siska Amelia</h4>
                         <p class="text-neutral-500 text-[10px] uppercase tracking-tighter">Fashion Designer</p>
@@ -247,9 +240,7 @@
                     <p class="text-neutral-300 italic leading-relaxed">"Pelayanan ramah dan pengerjaan tepat waktu. Jarang ada sablonan yang hasil produksinya sama persis sama mockup digital."</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">
-                        D
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">D</div>
                     <div>
                         <h4 class="text-white font-bold text-xs uppercase tracking-widest">Deni Setiawan</h4>
                         <p class="text-neutral-500 text-[10px] uppercase tracking-tighter">Entrepreneur</p>
@@ -263,9 +254,7 @@
                     <p class="text-neutral-300 italic leading-relaxed">"Efek puff ink 3D-nya rapi banget. Tim Journa bener-bener perhatiin kualitas tiap pieces-nya. Sangat direkomendasikan!"</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">
-                        M
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">M</div>
                     <div>
                         <h4 class="text-white font-bold text-xs uppercase tracking-widest">Maya Putri</h4>
                         <p class="text-neutral-500 text-[10px] uppercase tracking-tighter">Content Creator</p>
@@ -279,9 +268,7 @@
                     <p class="text-neutral-300 italic leading-relaxed">"Studio paling jujur soal bahan. Kalau premium ya beneran premium. Hasil Plascharge-nya soft banget di kain."</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">
-                        B
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-neutral-800 border border-white/10 group-hover:border-amber-500 transition flex items-center justify-center text-amber-500 font-bold text-lg shadow-inner">B</div>
                     <div>
                         <h4 class="text-white font-bold text-xs uppercase tracking-widest">Bima Sakti</h4>
                         <p class="text-neutral-500 text-[10px] uppercase tracking-tighter">Distro Owner</p>
@@ -332,7 +319,7 @@
 
                     <div>
                         <h4 class="text-amber-500 font-bold uppercase text-xs tracking-widest mb-3 italic">Facebook</h4>
-                        <a href="https://www.facebook.com/journaart" target="_blank" class="text-2xl md:text-3xl font-bold text-white hover:text-[#1877F2] transition-all flex items-center gap-4 group">
+                        <a href="" target="_blank" class="text-2xl md:text-3xl font-bold text-white hover:text-[#1877F2] transition-all flex items-center gap-4 group">
                             <div class="p-3 bg-white/5 rounded-2xl group-hover:bg-[#1877F2]/20 transition">
                                 <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                             </div>
