@@ -7,13 +7,17 @@
     {
       "handle": "filesystem"
     },
-        {
-            "src": "/img/(.*)",
-            "dest": "/public/img/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
-    ]
+    {
+      "src": "/img/(.*)",
+      "dest": "/public/img/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/img/logo.jpg"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
 }
