@@ -120,7 +120,7 @@
             </div>
             <div class="relative overflow-hidden rounded-[3rem] aspect-square bg-[#705515] border border-white/10 shadow-2xl transition-all duration-700 ease-out transform-gpu group-hover:rotate-y-12 group-hover:-rotate-x-6 group-hover:scale-105"
                 style="transform-style: preserve-3d;">
-                <img src="{{ asset('img/logo3.PNG') }}"
+                <img src="{{ asset('img/logo3.png') }}"
                     class="w-full h-full object-cover transition duration-1000 group-hover:scale-110"
                     style="transform: translateZ(30px);" alt="Journa Studio Logo">
                 <div class="absolute bottom-10 left-10 text-left transition-transform duration-700 group-hover:translate-z-50"
@@ -150,10 +150,55 @@
     </section>
 
     <section id="sablon" class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-32 text-center">
-        <h2 class="text-3xl md:text-5xl font-bold mb-12 md:mb-16 tracking-tighter uppercase italic text-white">Jenis
-            Sablon</h2>
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-12 md:mb-16 tracking-tighter uppercase italic text-white">
+            Jenis Sablon
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+
             <div class="group cursor-pointer" @click="selectProduct('Plastisol Raster', 65000)">
+                <div
+                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
+                    <img src="{{ asset('img/foto1.jpg') }}"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
+                        HUBUNGI KAMI</div>
+                </div>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plastisol Raster</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Detail Dot &
+                    Gradasi Halus</p>
+            </div>
+
+            <div class="group cursor-pointer" @click="selectProduct('Plastisol Glossy', 68000)">
+                <div
+                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
+                    <img src="{{ asset('img/foto2.jpg') }}"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
+                        HUBUNGI KAMI</div>
+                </div>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plastisol Glossy</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Kilau Mewah & Solid
+                </p>
+            </div>
+
+            <div class="group cursor-pointer" @click="selectProduct('Plascharge Ink', 75000)">
+                <div
+                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
+                    <img src="{{ asset('img/foto3.jpg') }}"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
+                        HUBUNGI KAMI</div>
+                </div>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plascharge Ink</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Lembut Menyatu Ke
+                    Kain</p>
+            </div>
+
+            <div class="group cursor-pointer" @click="selectProduct('Puff Ink 3D', 72000)">
                 <div
                     class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
                     <img src="{{ asset('img/foto4.jpg') }}"
@@ -162,124 +207,185 @@
                         class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
                         HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plastisol Raster</h3>
-                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Detail dot halus
-                </p>
-            </div>
-            <div class="group cursor-pointer" @click="selectProduct('Plastisol Glossy', 68000)">
-                <div
-                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="{{ asset('img/foto5.jpg') }}"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div
-                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
-                        HUBUNGI KAMI</div>
-                </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plastisol Glossy</h3>
-                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Efek mewah</p>
-            </div>
-            <div class="group cursor-pointer" @click="selectProduct('Plascharge Ink', 75000)">
-                <div
-                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="{{ asset('img/foto6.jpg') }}"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div
-                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
-                        HUBUNGI KAMI</div>
-                </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Plascharge Ink</h3>
-                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Menyatu ke kain</p>
-            </div>
-            <div class="group cursor-pointer" @click="selectProduct('Puff Ink 3D', 72000)">
-                <div
-                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
-                    <img src="{{ asset('img/foto7.jpg') }}"
-                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <div
-                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
-                        HUBUNGI KAMI</div>
-                </div>
                 <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Puff Ink 3D</h3>
-                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Efek timbul</p>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Efek Timbul
+                    Mengembang</p>
             </div>
+
+            <div class="group cursor-pointer" @click="selectProduct('Sablon Rubber', 55000)">
+                <div
+                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
+                    <img src="{{ asset('img/foto5.jpeg') }}"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
+                        HUBUNGI KAMI</div>
+                </div>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Sablon Rubber</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Elastis & Daya
+                    Tahan Tinggi</p>
+            </div>
+
+            <div class="group cursor-pointer" @click="selectProduct('Sablon DTF', 60000)">
+                <div
+                    class="aspect-square overflow-hidden rounded-xl md:rounded-2xl mb-4 md:mb-6 bg-neutral-900 border border-white/5 relative">
+                    <img src="{{ asset('img/foto6.jpeg') }}"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
+                        HUBUNGI KAMI</div>
+                </div>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Sablon DTF</h3>
+                <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Warna Full Color &
+                    Detail Presisi</p>
+            </div>
+
         </div>
     </section>
-    <section id="bahan" class="py-32 bg-[#0a0a0a]">
-        <div class="max-w-7xl mx-auto px-8 text-center">
-            <h2 class="text-5xl font-bold mt-4 mb-16 tracking-tighter uppercase italic text-white">Jenis Bahan</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 24s White')">
-                    <div
-                        class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                        <img src="{{ asset('img/kaos-putih.webp') }}"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                            alt="Cotton Combed 24s">
-                        <div
-                            class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                    </div>
-                    <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 24s</h3>
-                    <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Tebal & Nyaman</p>
-                </div>
 
-                <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 30s White')">
-                    <div
-                        class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                        <img src="{{ asset('img/kaos-hitam.jpg') }}"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                            alt="Cotton Combed 30s">
-                        <div
-                            class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                    </div>
-                    <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 30s</h3>
-                    <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Lembut & Adem</p>
+   <section id="bahan" class="py-32 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-12 md:mb-16 tracking-tighter uppercase italic text-white">
+            Jenis Bahan
+        </h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 30s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-putih.webp') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Combed 30s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
-
-                <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 24s Premium')">
-                    <div
-                        class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                        <img src="{{ asset('img/kaos-biru-muda.jpeg') }}"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                            alt="Cotton Combed 24s">
-                        <div
-                            class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                    </div>
-                    <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 24s</h3>
-                    <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">High Quality Fiber</p>
-                </div>
-
-                <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 30s Premium')">
-                    <div
-                        class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                        <img src="{{ asset('img/kaos-biru.jpg') }}"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                            alt="Cotton Combed 30s">
-                        <div
-                            class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                    </div>
-                    <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 30s</h3>
-                    <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Super Soft Touch</p>
-                </div>
-
-                <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed Exclusive')">
-                    <div
-                        class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                        <img src="{{ asset('img/kaos-kuning.jpg') }}"
-                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                            alt="Cotton Combed 24/30s">
-                        <div
-                            class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                    </div>
-                    <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 24/30s</h3>
-                    <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Best Seller Choice</p>
-                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 30s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Ringan & Paling Laris</p>
             </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 24s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-hitam.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Combed 24s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 24s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Tebal Sedang & Nyaman</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 20s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-biru-muda.jpeg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Combed 20s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 20s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Bahan Tebal & Kokoh</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Combed 16s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-biru.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Combed 16s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Combed 16s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Sangat Tebal (Heavyweight)</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Bamboo 30s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-kuning.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Bamboo 30s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Bamboo 30s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Anti Bakteri & Super Lembut</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Bamboo 24s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-ungu-muda.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Bamboo 24s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Bamboo 24s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Premium & Sejuk di Kulit</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Polyester 30s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-pink.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Polyester 30s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Polyester 30s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Awet & Tahan Lama</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Polyester 24s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-merah.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Polyester 24s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Polyester 24s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Cepat Kering & Ekonomis</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Pique Cotton')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-maroon.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Pique Cotton">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Pique Cotton</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Bahan Polo Berpori Alami</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Pique Polyester')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-hijau.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Pique Polyester">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Pique Polyester</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Bahan Polo Kuat & Solid</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Carded 30s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-coklat.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Carded 30s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Carded 30s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Harga Terjangkau</p>
+            </div>
+
+            <div class="group cursor-pointer text-center" @click="selectProduct('Cotton Carded 24s')">
+                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
+                    <img src="{{ asset('img/kaos-abu.jpg') }}"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                        alt="Cotton Carded 24s">
+                    <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-widest">Cotton Carded 24s</h3>
+                <p class="text-neutral-500 text-[9px] uppercase mt-1 tracking-tighter">Tekstur Unik & Klasik</p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="testimoni" class="max-w-7xl mx-auto px-8 py-32">
         <div class="text-center mb-20">
@@ -469,7 +575,7 @@
     </section>
     <footer class="p-20 text-center border-t border-white/5 bg-[#0a0a0a]">
         <div class="flex flex-col items-center mb-6">
-            <img src="{{ asset('img/logo.png') }}" alt="Journa Studio Logo" class="h-16 mb-4 rounded-sm">
+            <img src="{{ asset('img/logo.PNG') }}" alt="Journa Studio Logo" class="h-16 mb-4 rounded-sm">
         </div>
         <p class="opacity-30 text-[10px] tracking-[0.8em] uppercase mb-8 italic text-neutral-400">Premium Printing
             Laboratory Since 2022.</p>
