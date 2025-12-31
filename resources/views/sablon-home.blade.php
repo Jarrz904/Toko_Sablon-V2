@@ -37,7 +37,7 @@
 
         /* Background Hero Teroptimasi */
         .hero-bg {
-            background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 1)), url('{{ asset("img/logo3.png") }}');
+            background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 1)), url('{{ asset("img/bg-logo.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -221,7 +221,7 @@
                         class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
                         HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Sablon Rubber</h3>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Sablon DTF</h3>
                 <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Elastis & Daya
                     Tahan Tinggi</p>
             </div>
@@ -235,7 +235,7 @@
                         class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center italic text-[8px] md:text-xs tracking-widest font-bold text-white">
                         HUBUNGI KAMI</div>
                 </div>
-                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Sablon DTF</h3>
+                <h3 class="text-white font-bold uppercase tracking-tighter text-xs md:text-base">Sablon Rubber</h3>
                 <p class="text-neutral-500 text-[8px] md:text-[10px] uppercase tracking-widest mt-1">Warna Full Color &
                     Detail Presisi</p>
             </div>
