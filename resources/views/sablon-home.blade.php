@@ -127,7 +127,7 @@
                     style="transform: translateZ(50px);">
                     <p class="text-amber-500 font-bold tracking-[0.5em] text-[10px] uppercase mb-1 drop-shadow-md">Since
                     </p>
-                    <p class="text-4xl font-black italic text-white drop-shadow-2xl">2022</p>
+                    <p class="text-4xl font-black italic text-white drop-shadow-2xl">2019</p>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
             <div class="space-y-6">
                 <p class="text-neutral-400 leading-relaxed text-lg">
                     <strong class="text-white">Journa Studio Printing</strong> resmi didirikan pada tahun <strong
-                        class="text-amber-500">2022</strong>. Berawal dari dedikasi mendalam untuk menciptakan standar
+                        class="text-amber-500">2019</strong>. Berawal dari dedikasi mendalam untuk menciptakan standar
                     baru dalam produksi kaos, kami hadir sebagai spesialis sablon kaos premium yang menggabungkan
                     kenyamanan bahan dengan detail visual yang tajam.
                 </p>
