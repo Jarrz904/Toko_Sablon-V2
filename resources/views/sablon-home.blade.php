@@ -558,7 +558,7 @@
 
                     <div>
                         <h4 class="text-amber-500 font-bold uppercase text-xs tracking-widest mb-3 italic">Facebook</h4>
-                        <a href="" target="_blank"
+                        <a href="https://www.facebook.com/share/1L2PBrMioz/" target="_blank"
                             class="text-2xl md:text-3xl font-bold text-white hover:text-[#1877F2] transition-all flex items-center gap-4 group">
                             <div class="p-3 bg-white/5 rounded-2xl group-hover:bg-[#1877F2]/20 transition">
                                 <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
