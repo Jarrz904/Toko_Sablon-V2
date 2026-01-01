@@ -341,7 +341,7 @@
 
             <div class="group cursor-pointer text-center" @click="selectProduct('Pique Cotton')">
                 <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                    <img src="{{ asset('img/kaos-maroon.jpg') }}"
+                    <img src="{{ asset('img/polo1.jpg') }}"
                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                         alt="Pique Cotton">
                     <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -352,7 +352,7 @@
 
             <div class="group cursor-pointer text-center" @click="selectProduct('Pique Polyester')">
                 <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 mb-4 relative">
-                    <img src="{{ asset('img/kaos-hijau.jpg') }}"
+                    <img src="{{ asset('img/polo2.jpg') }}"
                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                         alt="Pique Polyester">
                     <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
